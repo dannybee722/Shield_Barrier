@@ -5,11 +5,13 @@ using UnityEngine;
 public class PlayerMovement : MovingObject {
 
     public Animator animator;
-
+    public float speed = 1.0f;
 
     private int moveDir;
     private float moveHoriz;
     private float moveVert;
+
+    private Vector3 move;
 
     // Use this for initialization
     protected override void Start () {
@@ -24,13 +26,16 @@ public class PlayerMovement : MovingObject {
         moveHoriz = Input.GetAxisRaw("Horizontal");
         moveVert = Input.GetAxisRaw("Vertical");
 
-        Move(moveHoriz, moveVert);
+        move = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
+        transform.position += move * speed * Time.fixedDeltaTime;
+
+        MoveDir(moveHoriz, moveVert);
 
         Debug.Log("Horiz " + moveHoriz);
         Debug.Log("Vert " + moveVert);
     }
 
-    private void Move(float horiz, float vert)
+    private void MoveDir(float horiz, float vert)
     {
         //if we're moving right, and up/down val is between(incl) +/- 0.5, keep animation as moving right
         if ((horiz > 0 && (vert >= 0 && vert <= 0.5)) || (horiz > 0 && ( vert <= 0 && vert >= -0.5)))
