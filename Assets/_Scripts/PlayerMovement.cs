@@ -60,5 +60,10 @@ public class PlayerMovement : MovingObject {
         {
             animator.SetTrigger("runDown");
         }
+
+        else if (vert == 0 && horiz == 0)
+        {
+            animator.SetTrigger("idle");
+        }
     }
 }

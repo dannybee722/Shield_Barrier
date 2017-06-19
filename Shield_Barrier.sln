@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shield_Barrier", "Shield_Barrier.csproj", "{106A599E-5E5A-BFC1-94B1-3CF35100202F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shield_Barrier.Editor", "Shield_Barrier.Editor.csproj", "{8DB8BFEE-E008-0FEB-CF74-EBD7386EA410}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{106A599E-5E5A-BFC1-94B1-3CF35100202F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{106A599E-5E5A-BFC1-94B1-3CF35100202F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{106A599E-5E5A-BFC1-94B1-3CF35100202F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DB8BFEE-E008-0FEB-CF74-EBD7386EA410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DB8BFEE-E008-0FEB-CF74-EBD7386EA410}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DB8BFEE-E008-0FEB-CF74-EBD7386EA410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DB8BFEE-E008-0FEB-CF74-EBD7386EA410}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
