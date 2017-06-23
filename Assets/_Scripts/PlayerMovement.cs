@@ -10,29 +10,36 @@ public class PlayerMovement : MovingObject {
     private int moveDir;
     private float moveHoriz;
     private float moveVert;
+    
+    private Rigidbody2D rigid;
 
     private Vector3 move;
 
     // Use this for initialization
     protected override void Start () {
+
+        rigid = this.GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
 
         base.Start();
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    private void FixedUpdate()
+    {
+        move = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
+
+        //transform.position += move * speed * Time.deltaTime;
+        rigid.velocity = move * speed;
+
+    }
+
+    // Update is called once per frame
+    void Update () {
 
         moveHoriz = Input.GetAxisRaw("Horizontal");
         moveVert = Input.GetAxisRaw("Vertical");
 
-        move = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
-        transform.position += move * speed * Time.fixedDeltaTime;
-
         MoveDir(moveHoriz, moveVert);
-
-        Debug.Log("Horiz " + moveHoriz);
-        Debug.Log("Vert " + moveVert);
     }
 
     private void MoveDir(float horiz, float vert)
@@ -65,5 +72,9 @@ public class PlayerMovement : MovingObject {
         {
             animator.SetTrigger("idle");
         }
+    }
+
+    void OnCollisionEnter2D(Collision2D other){
+        Debug.Log("collided");
     }
 }

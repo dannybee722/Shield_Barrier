@@ -555,6 +555,7 @@
     <Compile Include="Assets\_Scripts\MovingObject.cs" />
     <Compile Include="Assets\_Scripts\PlayerCombat.cs" />
     <Compile Include="Assets\_Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\_Scripts\SmoothCam.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Fungus\Docs\CHANGELOG.txt" />

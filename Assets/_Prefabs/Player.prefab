@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 50393046277773350}
   - component: {fileID: 61582027421632342}
   - component: {fileID: 114826566876959240}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -53,7 +53,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1281377362860008}
   m_BodyType: 0
-  m_Simulated: 1
+  m_Simulated: 0
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
