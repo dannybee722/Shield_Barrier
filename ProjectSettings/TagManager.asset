@@ -14,10 +14,10 @@ TagManager:
   - 
   - 
   - BlockingLayer
-  - 
-  - 
-  - 
-  - 
+  - Floor
+  - Overhang
+  - BlockingLayer2
+  - Overhang2
   - 
   - 
   - 
@@ -41,9 +41,24 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Floor
+  - name: Ground
     uniqueID: 205888653
+    locked: 0
+  - name: Buildings
+    uniqueID: 2700594635
     locked: 0
   - name: Units
     uniqueID: 1096191827
+    locked: 0
+  - name: Overhang
+    uniqueID: 3776711755
+    locked: 0
+  - name: Buildings2
+    uniqueID: 1976981423
+    locked: 0
+  - name: Units2
+    uniqueID: 3502766825
+    locked: 0
+  - name: Overhang2
+    uniqueID: 240549339
     locked: 0
