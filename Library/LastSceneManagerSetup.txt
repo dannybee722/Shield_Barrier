@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Dan_Movement_Playground.unity
+- path: Assets/Movement_Room.unity
   isLoaded: 1
   isActive: 1
