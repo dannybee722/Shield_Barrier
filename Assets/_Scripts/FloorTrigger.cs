@@ -23,7 +23,6 @@ public class FloorTrigger : MonoBehaviour {
                 //set player Layer to "BlockingLayer2"
                 collision.gameObject.layer = 11;
 
-
                 collision.gameObject.GetComponent<SpriteRenderer>().sortingLayerName = "Units2";
             }
         }

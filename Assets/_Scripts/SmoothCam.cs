@@ -9,6 +9,12 @@
     private Vector3 velocity = Vector3.zero;
     public Transform target;
 
+    private void Start()
+    {
+        //target = GameObject.Find("Player").transform;
+        transform.position = target.position + new Vector3(0, 0, -1.5f);
+        
+    }
     // Update is called once per frame
     void Update()
     {

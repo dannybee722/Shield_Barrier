@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MovingObject {
 
+    public static PlayerMovement instance;
+
     public Animator animator;
     public float speed = 1.0f;
 
@@ -18,6 +20,9 @@ public class PlayerMovement : MovingObject {
     // Use this for initialization
     protected override void Start () {
 
+        
+        instance = this;
+
         rigid = this.GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
 
@@ -26,6 +31,7 @@ public class PlayerMovement : MovingObject {
 
     private void FixedUpdate()
     {
+
         move = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
 
         //transform.position += move * speed * Time.deltaTime;
