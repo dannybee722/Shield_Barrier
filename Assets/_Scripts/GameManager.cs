@@ -22,25 +22,20 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        
+
+        SceneManager.sceneLoaded += OnLevelFinishedLoad;
     }
 
-    private void OnEnable()
+    private void OnLevelFinishedLoad(Scene scene, LoadSceneMode mode)
     {
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
+        SceneManager.sceneLoaded -= OnLevelFinishedLoad;
 
-    private void OnDisable()
-    {
-        SceneManager.sceneLoaded -= OnSceneLoaded;
-    }
-
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        //player.transform.position = destination.position;
+        Debug.Log("level loaded");
+        /*player.transform.position = destination.position;
         mainCamera.GetComponent<SmoothCam>().target = player.transform;
         mainCamera.GetComponent<SmoothCam>().target.position += camOffset;
         Debug.Log(destination.position);
+        */
     }
 
 }

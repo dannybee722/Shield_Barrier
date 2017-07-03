@@ -312,6 +312,72 @@ PolygonCollider2D:
       - {x: -0.45937023, y: 0.32627353}
       - {x: -1.3713573, y: -0.05454743}
       - {x: -2.0802753, y: -0.9395682}
+--- !u!1001 &795250301
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4194080894089812, guid: f41093cc9180a934891c02c49bf80ed8, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 4.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 4194080894089812, guid: f41093cc9180a934891c02c49bf80ed8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 4194080894089812, guid: f41093cc9180a934891c02c49bf80ed8, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4194080894089812, guid: f41093cc9180a934891c02c49bf80ed8, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4194080894089812, guid: f41093cc9180a934891c02c49bf80ed8, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4194080894089812, guid: f41093cc9180a934891c02c49bf80ed8, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4194080894089812, guid: f41093cc9180a934891c02c49bf80ed8, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4194080894089812, guid: f41093cc9180a934891c02c49bf80ed8, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114891215735223568, guid: f41093cc9180a934891c02c49bf80ed8,
+        type: 2}
+      propertyPath: spawnPoint
+      value: SP_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114891215735223568, guid: f41093cc9180a934891c02c49bf80ed8,
+        type: 2}
+      propertyPath: sceneToLoad
+      value: Movement_Playground
+      objectReference: {fileID: 0}
+    - target: {fileID: 114891215735223568, guid: f41093cc9180a934891c02c49bf80ed8,
+        type: 2}
+      propertyPath: spoint.x
+      value: 1.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 114891215735223568, guid: f41093cc9180a934891c02c49bf80ed8,
+        type: 2}
+      propertyPath: spoint.y
+      value: 2.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916419744458014, guid: f41093cc9180a934891c02c49bf80ed8, type: 2}
+      propertyPath: m_Name
+      value: ToSceneTrigger
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f41093cc9180a934891c02c49bf80ed8, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1766902813
 GameObject:
   m_ObjectHideFlags: 0

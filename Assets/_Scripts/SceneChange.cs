@@ -19,9 +19,8 @@ public class SceneChange : MonoBehaviour {
         if (other.tag == "Player")
         {
             DontDestroyOnLoad(other.gameObject);
-            DontDestroyOnLoad(this);
-            GameManager.GMinstance.destination.position = spoint;
             SceneManager.LoadScene(sceneToLoad);
+            GameManager.GMinstance.destination.position = spoint;
         }
     }
 }
