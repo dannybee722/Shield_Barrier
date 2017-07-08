@@ -11,7 +11,7 @@
 
     private void Start()
     {
-        target = GameObject.Find("Player").transform;
+        target = PlayerMovement.instance.transform;
         transform.position = target.position + new Vector3(0, 0, -1.5f);
         
     }

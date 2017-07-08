@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MovingObject {
 
-    public static PlayerMovement instance;
+    public static PlayerMovement instance = null;
 
     public Animator animator;
     public float speed = 1.0f;
@@ -18,10 +18,16 @@ public class PlayerMovement : MovingObject {
     private Vector3 move;
 
     // Use this for initialization
-    protected override void Start () {
+    private void Awake () {
 
-        
-        instance = this;
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
 
         rigid = this.GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
