@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Fungus_Practice/Fungus_Narrative.unity
+- path: Assets/Fungus_Practice/Fun_With_Fungus.unity
   isLoaded: 1
   isActive: 1
