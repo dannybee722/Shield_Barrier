@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class FloorTrigger : MonoBehaviour {
 
+    //transitions player from being on the first floor to the second in regards to rendering layer and sorting layer
+
     public int floorNumber;
 
     private void OnTriggerEnter2D(Collider2D collision)

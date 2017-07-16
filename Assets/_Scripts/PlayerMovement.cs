@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 
 public class PlayerMovement : MovingObject {
 
@@ -17,10 +18,13 @@ public class PlayerMovement : MovingObject {
 
     private Vector3 move;
 
+    //to be used by other scripts, (fungus conversations, scene transitions) to prevent 
+    //character from moving and performing animations when not intended
+    public bool cantMove = false;
+    public bool cantAttack = false;
+
     // Use this for initialization
     protected override void Start () {
-
-        
         instance = this;
 
         rigid = this.GetComponent<Rigidbody2D>();
@@ -35,19 +39,32 @@ public class PlayerMovement : MovingObject {
         move = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
 
         //transform.position += move * speed * Time.deltaTime;
-        rigid.velocity = move * speed;
+        if (cantMove != true)
+        {
+            rigid.velocity = move * speed;
 
+            moveHoriz = Input.GetAxisRaw("Horizontal");
+            moveVert = Input.GetAxisRaw("Vertical");
+
+            MoveDir(moveHoriz, moveVert);
+        }
     }
 
     // Update is called once per frame
-    void Update () {
-
-        moveHoriz = Input.GetAxisRaw("Horizontal");
-        moveVert = Input.GetAxisRaw("Vertical");
-
-        MoveDir(moveHoriz, moveVert);
+    void Update ()
+    {
+        //as long as movement is allowed (and you're not standing in an NPC conversation trigger, allow movement````
+        if (!cantMove && !cantAttack)
+        {
+            if (Input.GetKeyDown("space"))
+            {
+                animator.SetTrigger("attack");
+            }
+        }
+        
     }
 
+    //sets movement direction based on 'horiz' and 'vert' values
     private void MoveDir(float horiz, float vert)
     {
         //if we're moving right, and up/down val is between(incl) +/- 0.5, keep animation as moving right
@@ -83,4 +100,12 @@ public class PlayerMovement : MovingObject {
     void OnCollisionEnter2D(Collision2D other){
         Debug.Log("collided");
     }
+
+    public void StopMovement ()
+    {
+        cantMove = true;
+        rigid.velocity = new Vector3(0.0f, 0.0f, 0.0f);
+        MoveDir(0, 0);
+    }
+    
 }

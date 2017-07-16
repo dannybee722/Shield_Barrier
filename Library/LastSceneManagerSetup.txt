@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Fungus_Practice/Fun_With_Fungus.unity
+- path: Assets/Movement_Room.unity
   isLoaded: 1
   isActive: 1
