@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Movement_Playground.unity
-=======
-- path: Assets/Fungus_Practice/Fungus_Narrative.unity
->>>>>>> f51e07a861959ab4786ced664dddeb147fa456f6
+- path: Assets/Movement_Room.unity
   isLoaded: 1
   isActive: 1
