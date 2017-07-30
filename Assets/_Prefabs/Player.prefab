@@ -24,7 +24,6 @@ GameObject:
   - component: {fileID: 114876077628940028}
   - component: {fileID: 50393046277773350}
   - component: {fileID: 61582027421632342}
-  - component: {fileID: 114826566876959240}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -39,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1281377362860008}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.9, y: 2.9, z: 0}
+  m_LocalPosition: {x: -0.35, y: -2.99, z: -10}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
@@ -107,18 +106,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114826566876959240
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1281377362860008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bee4a5d9426fa48438b283fe92f130f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 95653107709988536}
 --- !u!114 &114876077628940028
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -135,6 +122,7 @@ MonoBehaviour:
     m_Bits: 256
   animator: {fileID: 95653107709988536}
   speed: 5
+  cantMove: 0
 --- !u!212 &212765016817992318
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -175,3 +163,4 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0

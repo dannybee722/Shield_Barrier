@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Movement_Room.unity
+=======
+- path: Assets/Movement_Playground.unity
+>>>>>>> 0dc27e9d55e10b2a54d4109af70a5be1bc56d4cf
   isLoaded: 1
   isActive: 1
