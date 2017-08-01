@@ -22,6 +22,7 @@ public class PlayerMovement : MovingObject {
     //character from moving and performing animations when not intended
     public bool cantMove = false;
     public bool cantAttack = false;
+    public bool spawned = false;
 
     // Use this for initialization
     protected override void Start () {
@@ -60,6 +61,12 @@ public class PlayerMovement : MovingObject {
             {
                 animator.SetTrigger("attack");
             }
+        }
+
+        //for testing resetting location on sceneload
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            rigid.transform.position = new Vector3(0.0f, 7f, 0.0f);
         }
         
     }

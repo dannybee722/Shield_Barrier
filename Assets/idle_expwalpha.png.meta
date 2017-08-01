@@ -1,0 +1,276 @@
+fileFormatVersion: 2
+guid: 9ee7f2b23ae41844b919f7ffa366df59
+timeCreated: 1501551853
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: idle_expwalpha_0
+    21300002: idle_expwalpha_1
+    21300004: idle_expwalpha_2
+    21300006: idle_expwalpha_3
+    21300008: idle_expwalpha_4
+    21300010: idle_expwalpha_5
+    21300012: idle_expwalpha_6
+    21300014: idle_expwalpha_7
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: idle_expwalpha_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 136
+        width: 60
+        height: 60
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_expwalpha_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 136
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_expwalpha_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 136
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_expwalpha_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 70
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_expwalpha_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 70
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_expwalpha_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 70
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_expwalpha_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_expwalpha_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 4
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline:
+    - - {x: -57, y: -35}
+      - {x: -71, y: -35}
+      - {x: -75, y: -38}
+      - {x: -77, y: -45}
+      - {x: -78, y: -43}
+      - {x: -82, y: -36}
+      - {x: -85, y: -37}
+      - {x: -86, y: -41}
+      - {x: -86, y: -57}
+      - {x: -82, y: -91}
+      - {x: -77, y: -97}
+      - {x: -58, y: -97}
+      - {x: -54, y: -86}
+      - {x: -53, y: -84}
+      - {x: -53, y: -43}
+    - - {x: 11, y: -44}
+      - {x: 3, y: -35}
+      - {x: -4, y: -35}
+      - {x: -11, y: -37}
+      - {x: -13, y: -45}
+      - {x: -14, y: -43}
+      - {x: -18, y: -36}
+      - {x: -21, y: -37}
+      - {x: -22, y: -38}
+      - {x: -22, y: -73}
+      - {x: -16, y: -97}
+      - {x: 5, y: -97}
+      - {x: 10, y: -86}
+      - {x: 10, y: -80}
+      - {x: 11, y: -69}
+    - - {x: -88, y: 31}
+      - {x: -88, y: 6}
+      - {x: -84, y: -26}
+      - {x: -74, y: -31}
+      - {x: -54, y: -31}
+      - {x: -53, y: -28}
+      - {x: -53, y: 31}
+    - - {x: -24, y: 31}
+      - {x: -24, y: 6}
+      - {x: -20, y: -26}
+      - {x: -15, y: -31}
+      - {x: 6, y: -31}
+      - {x: 11, y: -28}
+      - {x: 11, y: 28}
+      - {x: 8, y: 31}
+    - - {x: 68, y: 31}
+      - {x: 41, y: 31}
+      - {x: 41, y: 5}
+      - {x: 44, y: -26}
+      - {x: 54, y: -31}
+      - {x: 69, y: -31}
+      - {x: 74, y: -20}
+      - {x: 75, y: -15}
+      - {x: 75, y: 27}
+    - - {x: -76, y: 97}
+      - {x: -86, y: 96}
+      - {x: -86, y: 61}
+      - {x: -78, y: 35}
+      - {x: -54, y: 35}
+      - {x: -53.4617, y: 37.23085}
+      - {x: -53, y: 97}
+    - - {x: -22, y: 97}
+      - {x: -23, y: 96}
+      - {x: -23, y: 46}
+      - {x: -15, y: 35}
+      - {x: 11, y: 35}
+      - {x: 11, y: 97}
+    - - {x: 40, y: 97}
+      - {x: 40, y: 66}
+      - {x: 50, y: 35}
+      - {x: 75, y: 35}
+      - {x: 75, y: 97}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

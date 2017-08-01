@@ -5,9 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Movement_Room.unity
+  - enabled: 0
+    path: Assets/Test_Scenes/Movement_Room.unity
     guid: b3d9ddebc33f5cb459d21d1f9e51763c
-  - enabled: 1
-    path: Assets/Movement_Playground.unity
+  - enabled: 0
+    path: Assets/Test_Scenes/Movement_Playground.unity
     guid: 4bc7234fb47433541b57575eb25c5741
+  - enabled: 1
+    path: Assets/Center_Plaza.unity
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Home_Interior.unity
+    guid: 00000000000000000000000000000000

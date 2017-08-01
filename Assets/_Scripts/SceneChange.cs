@@ -2,25 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Fungus;
 
 public class SceneChange : MonoBehaviour {
     
-    public string sceneToLoad;
-    public string spawnPoint;
-    public Vector3 spoint;
+    [Tooltip("naming convention of blocks is 'ToSceneName'")]
+    public string fungusBlockToCall;
+    public Flowchart flowchart;
 
     private void Start()
     {
-        Debug.Log(": target scene is " + sceneToLoad);
+        Debug.Log(": fungus block is " + fungusBlockToCall);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
         {
-            DontDestroyOnLoad(other.gameObject);
-            SceneManager.LoadScene(sceneToLoad);
-            GameManager.GMinstance.destination.position = spoint;
+            other.gameObject.GetComponent<PlayerMovement>().StopMovement();
+            flowchart.ExecuteBlock(fungusBlockToCall);
         }
     }
 }
